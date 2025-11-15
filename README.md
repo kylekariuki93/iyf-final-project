@@ -1,75 +1,82 @@
-# React + TypeScript + Vite
+# KyleCars.ke
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+[https://iyf-final-project-wrp1-bcmqfoj4b-kyle-kariukis-projects.vercel.app](https://iyf-final-project-wrp1-bcmqfoj4b-kyle-kariukis-projects.vercel.app)
 
-Currently, two official plugins are available:
+## Project Overview
+KyleCars.ke is a premium car dealership and management website designed to provide luxury car enthusiasts and dealers with a seamless experience. Users can explore high-end vehicles, view detailed specifications, and easily contact dealers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Brand Identity
 
-## React Compiler
+### Color System
+| Color     | Hex     | Usage/Rationale |
+|----------|---------|----------------|
+| Primary  | #1F2937 | Dark Gray - sleek, modern, luxury feel |
+| Secondary| #FBBF24 | Gold - highlights, buttons, conveys elegance |
+| Accent   | #FFFFFF | White - text/background contrast for readability |
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Typography
+| Type      | Font   | Usage/Reasoning |
+|-----------|--------|----------------|
+| Headings  | Poppins| Clean, bold, modern |
+| Body      | Roboto | Readable, professional, complements headings |
 
-Note: This will impact Vite dev & build performances.
+## Design Decisions
 
-## Expanding the ESLint configuration
+### Layout Adherence
+- Used Tailwind CSS grid and flex utilities to maintain consistent spacing  
+- Margins and padding measured in `rem` units for responsiveness  
+- Verified alignment and proportions using Figma  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Creative Departures
+- Dynamic hero images and testimonials implemented for engagement  
+- Brand positioned as premium but approachable for buyers  
+- Mobile-first breakpoints using Tailwind’s `sm`, `md`, `lg`, and `xl` classes  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Component Architecture
+- Modular React components: Header, Footer, Hero, Testimonials, Subscription  
+- Reusable button, card, and image components  
+- Folder structure separates layout, components, and pages for maintainability  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Performance Optimizations
+- Image optimization using Vite’s asset handling  
+- Minimized CSS and JS via Vite build  
+- Tailwind purge configured to remove unused styles  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Screenshots
+### Desktop View
+![Desktop Screenshot 1](./screenshots/desktop1.png)
+![Desktop Screenshot 2](./screenshots/desktop2.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Mobile View
+![Mobile Screenshot 1](./screenshots/mobile1.png)
+![Mobile Screenshot 2](./screenshots/mobile2.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+> Replace the paths above with your actual screenshot filenames in the `/screenshots` folder.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Image Credits
+- All images sourced from royalty-free platforms (Unsplash, Pexels)  
+- Individual attribution available in `/assets` folder  
+
+## Installation & Setup
+Follow these steps to run the project locally:
+
+1. **Navigate to the project folder:**  
+```bash
+cd kylekariuki-iyf-final
+npm run dev
+npm run build
+
+deploy using vercel (optional)
+vercel --prod
+
+
+
+
+
+
+
+
+
+
+
