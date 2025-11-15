@@ -56,7 +56,24 @@ KyleCars.ke is a premium car dealership and management website designed to provi
 
 ## Image Credits
 - All images sourced from royalty-free platforms (Unsplash, Pexels)  
-- Individual attribution available in `/assets` folder  
+- Individual attribution available in `/assets` folder
+
+## Technologies Used
+- **React:** 18.x
+- **Tailwind CSS:** 3.x
+- **Vite:** Latest version
+- **Additional Packages:** autoprefixer, react-icons
+
+## Challenges & Solutions
+1. **404 errors on deployment:** Fixed by adding `_redirects` file and using Vercel auto-deploy for SPA routing
+2. **Responsive design issues on mobile:** Solved using Tailwind responsive classes (`sm:`, `md:`, `lg:`)
+3. **Optimizing images for performance:** Compressed images and used Vite’s asset handling
+
+## Future Improvements
+1. Add full backend integration for dealer management
+2. Implement user authentication and favorites system
+3. Add dynamic car search and filtering
+ 
 
 ## Installation & Setup
 Follow these steps to run the project locally:
@@ -66,9 +83,13 @@ Follow these steps to run the project locally:
 cd kylekariuki-iyf-final
 npm run dev
 npm run build
-
 deploy using vercel (optional)
 vercel --prod
+
+
+
+
+
 
 
 
