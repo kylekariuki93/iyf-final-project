@@ -45,8 +45,8 @@ KyleCars.ke is a premium car dealership and management website designed to provi
 
 ## Screenshots
 ### Desktop View
-![Desktop Screenshot 1](./screenshots/desktop1.png)
-![Desktop Screenshot 2](./screenshots/desktop2.png)
+![Desktop Screenshot 1](desktop1.png)
+![Desktop Screenshot 2](desktop2.png)
 
 ### Mobile View
 ![Mobile Screenshot 1](./screenshots/mobile1.png)
